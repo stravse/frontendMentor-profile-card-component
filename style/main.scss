@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+
+:root{
+    font-size: 18px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    overflow: auto;
+}
+body{
+    height: 100%;
+    color: $Dark-grayish-blue;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $Dark-cyan;
+    font-size: 15px;
+    overflow: hidden;
+}
+h1,h2{
+    font-size: 18px;
+    color: $Very-dark-desaturated-blue;
+    font-weight: 700;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    position: relative;
+}
+.image-bg{
+    position: absolute;
+    width: 1000px;
+    z-index: auto;
+    &-top{
+        top: -700px;
+        left: -800px;
+    }
+    &-bottom{
+        top: 220px;
+        right: -700px;
+    }
+}
+.card{
+    position: relative;
+    width: 330px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    &-image-container{
+        width: 100%;
+        position: relative;
+        margin-bottom: 80px;
+        .card-image{
+            position: absolute;
+            top: 60%;
+            left: calc(50% - 54px);
+            border: 5px solid white;
+            border-radius: 50%;
+        }
+    }
+    &-text{
+        position: relative;
+        .age{
+            color: $Dark-grayish-blue;
+            font-weight: 400;
+            margin-left: 5px;
+        }
+        .place{
+            margin: 10px 0 20px 0;
+            font-weight: 400;
+        }
+        
+    }
+}
+.card-stats{
+    margin: 20px 0;
+}
+.separator{
+    width: 100%;
+    height: 1px;
+    background-color: #e5e7eb;
+}
+.stat-item{
+    text-align: center;
+    p{
+        font-size: 14px;
+    }
+}
+.just-space-even{
+    justify-content: space-evenly;
+}
+.attribution { color: white;font-size: 11px; text-align: center; margin: 20px 0; z-index: 1;}
+.attribution a { color: hsl(228, 45%, 44%); }

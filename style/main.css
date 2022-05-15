@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  font-size: 18px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  height: 100%;
+  color: #6a6f81;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #19a2ae;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+h1, h2 {
+  font-size: 18px;
+  color: #2d3248;
+  font-weight: 700;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content {
+  position: relative;
+}
+
+.image-bg {
+  position: absolute;
+  width: 1000px;
+  z-index: auto;
+}
+
+.image-bg-top {
+  top: -700px;
+  left: -800px;
+}
+
+.image-bg-bottom {
+  top: 220px;
+  right: -700px;
+}
+
+.card {
+  position: relative;
+  width: 330px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card-image-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.card-image-container .card-image {
+  position: absolute;
+  top: 60%;
+  left: calc(50% - 54px);
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.card-text {
+  position: relative;
+}
+
+.card-text .age {
+  color: #6a6f81;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.card-text .place {
+  margin: 10px 0 20px 0;
+  font-weight: 400;
+}
+
+.card-stats {
+  margin: 20px 0;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item p {
+  font-size: 14px;
+}
+
+.just-space-even {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  margin: 20px 0;
+  z-index: 1;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
